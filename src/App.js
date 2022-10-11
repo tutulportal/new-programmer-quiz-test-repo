@@ -1,8 +1,7 @@
 import './App.css';
 import {
   createBrowserRouter,
-  RouterProvider,
-  Route,
+  RouterProvider
 } from "react-router-dom";
 import Main from './layouts/Main';
 import HomePage from './components/HomePage/HomePage';

@@ -3,6 +3,7 @@
     padding: 0 40px;
     background-color: rgb(30, 170, 111);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -29,8 +30,13 @@
     padding-right: 7px;
 }
 
+.menu-top > .menuSide{
+    position: relative;
+}
+
 .menu-top > .menuSide > nav{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .menu-top > .menuSide > nav > li{
@@ -43,6 +49,58 @@
     margin-left: 15px;
 }
 
+.desktop-logo{
+    display: block;
+}
+
+.mobile-logo{
+    display: none;
+}
+
+.menu-icon{
+    cursor: pointer;
+    height: 35px;
+    color: #ffffff;
+    display: none;
+}
+
+@media (max-width:810px){
+    .desktop-logo{
+        display: none;
+    }
+    .mobile-logo{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-top > .menuSide > nav{
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #ffffff;
+        border: 1px solid rgb(30, 170, 111);
+        top: 45px;
+        right: -125px;
+        border-radius: 5px;
+        padding: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s all cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+
+    .menu-top > .menuSide > nav.active-menu{
+        right: -90px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-top > .menuSide > nav > li > a{
+        color:rgb(30, 170, 111);
+        margin-left: 0;
+        padding: 10px 10px;
+    }
+}
 
 
  
