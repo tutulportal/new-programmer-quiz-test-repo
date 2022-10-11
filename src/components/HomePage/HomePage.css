@@ -1,0 +1,81 @@
+.home-content-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner-home-content{
+    width: calc(100% - 30%);
+    margin: 0 15%;
+}
+
+.inner-home-content > .top-hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-hero > h1{
+    font-size: 3.5em;
+    text-align: center;
+    color: rgb(30, 170, 111);
+    font-weight: 400;
+    padding: 70px 0 10px 0;
+    margin: 0;
+}
+
+.black-dot{
+    color: #262626;
+}
+
+.top-hero > p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 0 20px 0;
+    margin: 0;
+}
+
+.green-color{
+    color:rgb(30, 170, 111);
+    font-weight: 700;
+}
+
+.top-hero > a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(30, 170, 111);
+    padding: 10px 25px;
+    font-size: 17px;
+    letter-spacing: 5px;
+    font-weight: 300;
+    text-transform: uppercase;
+    box-shadow: 2px 5px 20px rgb(119, 255, 198);
+    transition: 0.2s all ease-in;
+}
+
+.top-hero > a:hover{
+    background-color: #ffffff;
+    color: rgb(30, 170, 111);
+    box-shadow: 2px 5px 20px rgb(119, 255, 198);
+}
+
+@media (max-width:810px){
+    .inner-home-content{
+        width: calc(100% - 10%);
+        margin: 0 5%;
+    }
+    .top-hero > h1{
+        font-size: 2em;
+        padding: 20px 0 15px 0;
+        font-weight: 500;
+    }
+    .top-hero > a{
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+}

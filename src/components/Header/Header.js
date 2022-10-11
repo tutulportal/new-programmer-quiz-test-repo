@@ -6,7 +6,7 @@ import './Header.css';
 const Header = () => {
     const [menuIcon, setMenuIcon] = useState(false);
     let menuActive;
-    if(menuIcon == true){
+    if(menuIcon === true){
         menuActive = 'active-menu';
     }else{
         menuActive = '';
