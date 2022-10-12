@@ -10,13 +10,19 @@
     box-shadow: 0 8px 40px rgb(119, 255, 198);
 }
 
-.menu-top > .logoSide{
+.fixLink{
+    text-decoration: none;
+    color: #ffffff;
+    display: inline;
+}
+
+.menu-top > .logoSide > .fixLink{
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.menu-top > .logoSide > h2{
+.menu-top > .logoSide > .fixLink > h2{
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 400;

@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <div className='menu-top'>
             <div className="logoSide">
-                <RocketLaunchIcon className="icon-size"/> <h2 className='desktop-logo'>Muslim Programmers Quiz</h2> <h2 className='mobile-logo'>M.P.QUIZ</h2>
+                <Link className='fixLink' to='/home'><RocketLaunchIcon className="icon-size"/> <h2 className='desktop-logo'>Muslim Programmers Quiz</h2> <h2 className='mobile-logo'>M.P.QUIZ</h2></Link>
             </div>
             <div className="menuSide">
                 <nav className={menuActive}>
