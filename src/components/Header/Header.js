@@ -21,8 +21,8 @@ const Header = () => {
                     <li><Link to='/home'>Home</Link></li>
                     <li><Link to='/blog'>Blog</Link></li>
                 </nav>
+                <Bars3BottomRightIcon className='menu-icon' onClick={() => setMenuIcon(!menuIcon)}/>
             </div>
-            <Bars3BottomRightIcon className='menu-icon' onClick={() => setMenuIcon(!menuIcon)}/>
         </div>
     );
 };

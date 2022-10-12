@@ -7,7 +7,7 @@ const NotFound = () => {
     return (
         <div className='not-found'>
             <h2><MagnifyingGlassMinusIcon  className="not-found-icon"/></h2>
-            <h1>ROUTE NOT FOUND</h1>
+            <h1>404, ROUTE NOT FOUND</h1>
             <Link to='/home'>Go To Home</Link>
         </div>
     );

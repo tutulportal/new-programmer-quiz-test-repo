@@ -80,8 +80,8 @@
         align-items: flex-end;
         background-color: #ffffff;
         border: 1px solid rgb(30, 170, 111);
-        top: 45px;
-        right: -125px;
+        top: 60px;
+        right: -35px;
         border-radius: 5px;
         padding: 10px;
         opacity: 0;
@@ -90,7 +90,7 @@
     }
 
     .menu-top > .menuSide > nav.active-menu{
-        right: -90px;
+        right: 0px;
         opacity: 1;
         visibility: visible;
     }
