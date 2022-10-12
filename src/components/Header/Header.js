@@ -19,6 +19,7 @@ const Header = () => {
             <div className="menuSide">
                 <nav className={menuActive}>
                     <li><Link to='/home'>Home</Link></li>
+                    <li><Link to='/statistics'>Statistics</Link></li>
                     <li><Link to='/blog'>Blog</Link></li>
                 </nav>
                 {

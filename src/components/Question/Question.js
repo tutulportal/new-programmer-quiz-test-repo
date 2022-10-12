@@ -3,7 +3,6 @@ import { Markup } from 'interweave';
 import { EyeIcon } from '@heroicons/react/24/solid';
 
 const Question = (props) => {
-    console.log(props);
     const {id, question, options, correctAnswer} = props.question;
     const checkOption = props.checkOption;
     const correctAns = props.correctAns;
