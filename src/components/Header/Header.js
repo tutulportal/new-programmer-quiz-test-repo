@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { RocketLaunchIcon, Bars3BottomRightIcon } from '@heroicons/react/24/solid';
+import { RocketLaunchIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
 import './Header.css';
 
 const Header = () => {
@@ -21,7 +21,10 @@ const Header = () => {
                     <li><Link to='/home'>Home</Link></li>
                     <li><Link to='/blog'>Blog</Link></li>
                 </nav>
-                <Bars3BottomRightIcon className='menu-icon' onClick={() => setMenuIcon(!menuIcon)}/>
+                {
+                    menuIcon ? <XMarkIcon className='menu-icon' onClick={() => setMenuIcon(!menuIcon)}/> : <Bars3BottomRightIcon className='menu-icon' onClick={() => setMenuIcon(!menuIcon)}/>
+                }
+                
             </div>
         </div>
     );
